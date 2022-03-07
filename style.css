@@ -114,6 +114,25 @@ input, textarea, select {
     flex-wrap: wrap;
     gap: 50px;
 }
+#contentRight{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+#contentRight p:first-child{
+    font-weight: bold;
+}
+#contentTickets{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#ticketCards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 /* CLASSES */
 .menuDivider{
     height: 50px;
@@ -149,7 +168,32 @@ input, textarea, select {
     display: grid;
     grid-template-columns: 11px 1fr;
 }
-.taskPriority{
+.ticketCard{
+    background-color: white;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 11px 1fr;
+    cursor: pointer;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+}
+.ticketContent{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 269px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ticketBody{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.taskPriority, .ticketPriority{
     height: 100%;
     width: 11px;
     border-top-left-radius: 10px;
