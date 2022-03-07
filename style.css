@@ -19,10 +19,12 @@ input, textarea, select {
 
 /* STYLE START */
 :root {
-    --background: white;
-    --foreground: black;
-    --accent-one: red;
-    --accent-two: yellow;
+    --background: rgb(245, 245, 245);
+    --foreground: rgb(54, 54, 54);
+    --accent-one: #cc5f4f;
+    --accent-one-light: #e47564;
+    --accent-two: #383346;
+    --accent-two-light: #4e485e;
 }
 
 /* IDs */
