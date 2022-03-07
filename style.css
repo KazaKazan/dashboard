@@ -28,9 +28,45 @@ input, textarea, select {
 }
 
 /* IDs */
-
+#menu{
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background-color: var(--accent-two);
+    color: var(--background);
+    padding: 20px;
+}
+#logo{
+    display: flex;
+    font-family: 'Redressed', sans-serif;
+    font-size: 36px;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+}
+#logo > img{
+    height: 48px;
+}
 /* CLASSES */
-
+.menuDivider{
+    height: 50px;
+}
+.menuItem{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.menuItem:hover > img{
+    border-left: 5px solid rgba(255, 255, 255, 0.5);
+    padding: 2px;
+}
+.menuItem:active > img{
+    border-color: white;
+}
 /* ANIMATION */
 
 /* MOBILE SUPPORT */
