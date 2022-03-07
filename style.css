@@ -35,7 +35,7 @@ input, textarea, select {
     width: 190px;
     max-width: 190px;
     background-color: var(--accent-two);
-    color: var(--background);
+    color: white;
     padding: 20px;
 }
 #logo{
@@ -70,6 +70,7 @@ input, textarea, select {
 #headerLeft{
     display: flex;
     gap: 10px;
+    min-width: 300px;
 }
 #userCard{
     font-size: 26px;
@@ -93,8 +94,25 @@ input, textarea, select {
     font-weight: normal;
 }
 #content{
-    height: 2000px;
+    background-color: var(--background);
+    min-height: calc(100% - 90px);
     max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+#contentTasks{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#contentTasks > p{
+    font-weight: bold;
+}
+#taskCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 /* CLASSES */
 .menuDivider{
@@ -121,6 +139,57 @@ input, textarea, select {
     border: 2px solid white;
     border-radius: 50%;
     cursor: pointer;
+}
+.taskCard{
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 11px 1fr;
+}
+.taskPriority{
+    height: 100%;
+    width: 11px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.taskCardContent{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 24px 1fr 24px;
+}
+.taskTitle{
+    font-weight: bold;
+}
+.taskcardButtons{
+    display: flex;
+    width: 100%;
+    height: 24px;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.high{
+    background-color: rgb(219, 31, 31);
+}
+.medium{
+    background-color: rgb(250, 250, 87);
+}
+.low{
+    background-color: greenyellow;
+}
+.dark{
+    filter: brightness(0%);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.dark:hover{
+    filter: brightness(25%);
+}
+.dark:active{
+    scale: 1.3;
 }
 /* ANIMATION */
 
