@@ -2,6 +2,9 @@ This is an admin dashboard page for the curricilum of The Odin Project.
 
 This time around I didn't want to go overboard and keep it simple, no additional JS or anything that wasn't asked for in the assignment. The theme is similar to my submission for the last assignment, with the same imaginary company.
 
+**LIVE DEMO**
+
+https://kazakazan.github.io/dashboard
 
 **ATTRIBUTES**
 
